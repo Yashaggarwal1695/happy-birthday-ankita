@@ -1,0 +1,1 @@
+Optional asset folder.

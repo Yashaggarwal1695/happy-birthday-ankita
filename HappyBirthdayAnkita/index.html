@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Happy Birthday Ankita 🎉</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- CSS FILE -->
+<link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+<!-- BACKGROUND SLIDESHOW -->
+<div class="bg-slideshow">
+    <img src="WhatsApp Image 2026-02-21 at 21.31.23.jpeg">
+    <img src="WhatsApp Image 2026-02-21 at 21.36.05.jpeg">
+    <img src="WhatsApp Image 2026-02-21 at 21.38.04.jpeg">
+</div>
+
+<!-- FIREWORKS BEHIND POLAROIDS -->
+<canvas id="fireworksCanvas"></canvas>
+
+<!-- FLOATING POLAROIDS -->
+<div class="polaroid p1"><img src="WhatsApp Image 2026-02-21 at 21.38.05.jpeg"></div>
+<div class="polaroid p2"><img src="WhatsApp Image 2026-02-21 at 21.40.23.jpeg"></div>
+<div class="polaroid p3"><img src="WhatsApp Image 2026-02-21 at 21.44.35.jpeg"></div>
+<div class="polaroid p4"><img src="WhatsApp Image 2026-02-21 at 21.44.36.jpeg"></div>
+
+<!-- SECTION 1: INTRO + COUNTDOWN -->
+<section id="intro" class="fade-section">
+    <div class="glass-card">
+        <h1>Happy Birthday Ankita 🎉</h1>
+        <p>
+            Your presence brings a different kind of brightness.  
+            Your strength, kindness, and thoughtful nature  
+            make today worth celebrating in the warmest way.
+        </p>
+
+        <div id="countdown">Loading…</div>
+
+        <button id="musicBtn">Play Music 🎶</button>
+        <audio id="bgMusic" loop>
+            <source src="music/Birthday_Bash_1.mp3">
+        </audio>
+    </div>
+</section>
+
+<!-- TAP TO REVEAL SECRET MESSAGE -->
+<section id="secret" class="fade-section">
+    <h2>Tap to reveal something special</h2>
+
+    <div id="secretBox" class="secret-box">
+        <div class="secret-front">Tap Here</div>
+        <div class="secret-back">
+            You deserve joy in the purest form.
+        </div>
+    </div>
+</section>
+
+<!-- LETTER SECTION -->
+<section id="letter" class="fade-section">
+    <h2>A Message Inside a Letter</h2>
+
+    <div class="envelope" onclick="this.classList.toggle('open')">
+        <div class="letter">
+            <p>
+                I hope this year brings you gentle days,  
+                warm moments, and reasons to smile often.  
+                May everything ahead unfold beautifully for you.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- HEART COLLAGE -->
+<section id="collage" class="fade-section">
+    <h2>A Heart of Moments</h2>
+
+    <div class="heart-collage">
+        <img src="h1.jpeg" class="h1">
+        <img src="h2.jpeg" class="h2">
+        <img src="h3.jpeg" class="h3">
+        <img src="h4.jpeg" class="h4">
+        <img src="h5.jpeg" class="h5">
+        <img src="h6.jpeg" class="h6">
+        <img src="WhatsApp Image 2026-02-21 at 21.31.23.jpeg" class="h7">
+    </div>
+</section>
+
+<!-- SHAYARI SECTION -->
+<section id="shayari" class="fade-section">
+    <h2>For Ankita ✨</h2>
+
+    <div class="shayari-box">
+        <p>
+            Teri muskurahat se roshan har subah ho jaati hai,<br>
+            Tere hone se zindagi aur bhi khaas ho jaati hai.
+        </p>
+    </div>
+
+    <div class="shayari-box">
+        <p>
+            Har khushi tujhe naseeb ho yeh dua hai meri,<br>
+            Tera har din chamakta rahe sitaron se bhi zyada.
+        </p>
+    </div>
+
+    <div class="shayari-box">
+        <p>
+            Teri ada, tera andaaz sabse juda lagta hai,<br>
+            Tera saath har lamha sukoon sa lagta hai.
+        </p>
+    </div>
+
+    <div class="shayari-box">
+        <p>
+            Zindagi ke har mod par bas itna sa armaan hai,<br>
+            Tu muskuraati rahe, bas yahi sabse bada inaam hai.
+        </p>
+    </div>
+
+</section>
+
+<!-- FULL GALLERY -->
+<section id="gallery" class="fade-section">
+    <h2>Gallery</h2>
+
+    <div class="gallery-grid">
+        <img src="WhatsApp Image 2026-02-21 at 23.05.04.jpeg">
+        <img src="WhatsApp Image 2026-02-21 at 21.36.05.jpeg">
+        <img src="WhatsApp Image 2026-02-21 at 21.44.35.jpeg">
+        <img src="WhatsApp Image 2026-02-21 at 21.40.23.jpeg">
+        <img src="WhatsApp Image 2026-02-21 at 21.38.05.jpeg">
+        <img src="WhatsApp Image 2026-02-21 at 21.38.04.jpeg">
+    </div>
+</section>
+
+<!-- CONSTELLATION -->
+<canvas id="constellation"></canvas>
+
+<!-- FINAL REVEAL -->
+<div id="finalReveal">
+    <div class="final-text">✨ You Make This World Brighter ✨</div>
+    <div class="final-note">
+        As this page ends, it holds one more wish for you —  
+        may this year bring warmth, clarity, and moments  
+        that remind you of your own strength and brilliance.
+        <br><br>
+        
+    </div>
+</div>
+
+<!-- CONFETTI -->
+<canvas id="confettiCanvas"></canvas>
+
+<!-- FIRELIES -->
+<div id="fireflyContainer"></div>
+
+<!-- JS FILE -->
+<script src="script.js"></script>
+
+</body>
+</html>
